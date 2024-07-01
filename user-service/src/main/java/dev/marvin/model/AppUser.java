@@ -1,6 +1,5 @@
 package dev.marvin.model;
 
-
 import jakarta.persistence.Id;
 import lombok.Builder;
 import lombok.Data;
@@ -34,8 +33,13 @@ public class AppUser {
     @Field(name = "email")
     private String email;
 
+    @Field(name = "mobile number")
     private String mobileNumber;
+
+    @Field(name = "government id")
     private String governmentId;
+
+
     private String kraPin;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
